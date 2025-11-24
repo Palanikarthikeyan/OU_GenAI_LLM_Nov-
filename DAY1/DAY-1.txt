@@ -1,0 +1,557 @@
+
+	Good Morning All
+
+	Welcome to Gen AI and LLM training 
+		   ==============
+	This is Palani Karthikeyan (Call: Karthik) Trainer.
+	 	==================================
+
+
+AI - field of CS - Focus on creating machine or software that think,learn and make decisions like humans.
+
+Narrow AI - Weak AI
+|->Built on specific task - one task
+   |-> Text Generation - ChatGpt
+   |-> Google maps
+   |-> Face recognition
+
+General AI - Strong AI
+ 
+  |->AI that can think and learn like human
+
+  |->Super AI //
+ 
+Machine Learning
+-----------------
+ AI that learns from data
+
+
+
+General Programming =>   Input ---->[m/c] -->output
+			10,20       [+]  --->30
+ Vs
+ML Programming	=> Input,Output -->[m/c] --->Algorithm
+				
+		  10,20 ->10+20 = 30		addition
+						 |
+						100,200 => 300
+
+						
+Supervised learning
+- Regression  - Classification 
+Unsupervised learning
+- no label 
+Reinforcement Learning
+|->trail and error 
+
+Graph Machine Learning (GML)
+=============================
+Graph(G) 
+G=(V,E)
+
+	(Person-A) <------------> (Person-B)
+		|				
+		|		
+		(Person-C)
+
+
+Deep learning
+----
+ |->Collect the data(ex: images,sounds,audios,..)
+ |->Neural Network
+
+	Input layer
+	hidden layer(processing)
+	output layer
+
+ |->ANN,CNN,RNN
+
+ RNN - Language Translation 
+ |
+ Transformer Network
+
+Aritifical Neural network 
+Convolution Neurlal Network --- (Image Classification)
+Recurrent Neural Network -- language translation - sequence prediction + memory 
+ | 
+ |-->Long Short-Term Memory
+ |-->Gated Recurrent Unit
+ 
+|
+Transformer 
+ |->used NLP 
+ |->Self-attention
+
+Deep Learning Category
+-----------------------
+ANN - table format data set 
+CNN - Images,Videos
+RNN  - Text - sequence
+Transformer - NLP
+
+
+Gen AI
+-------
+ Text  -- LLM
+ Image
+ Audio
+ Video 
+ Code 
+
+Gen AI ->Generate new data (text,image,audio,video,code) - from the existing trained model.
+
+model = algorithm 
+
+
+LLM (Large Language Model)
+---------------------------
+ - trained model on massive text datasets(collection from various sources - datasets,web,docs,...) to understand and generate human like language .
+  
+ End user: Get list of sales emp's records //plain text-English 
+	   ===============================
+			| ||
+			LLM
+			| |
+			DB - select *from <table> ... <similarity search - vector distance function()>
+							=======
+
+GenAI using LLMs
+
+1. Text Generation 
+2. Chat / QA
+3. Code generation 
+4. Summarization
+5. Reasoning
+6. RAG
+7. Translation 
+8. Content Transformation 
+-------------------------------------//
+
+   myfile (or) directory (or) webContent 
+ +-------------+
+ |	       |
+ +-------------+
+ -------------------------//
+
+NLP
+- Tokenization 
+- Embedding layers
+	
+
+
+model = Algorithm
+
+LLM
+- Only Text
+  
+Input and output = Text Only
+use cases: QA,code generation,summarization
+model: Llama,gemma ...
+
+LLM Not understand Images,audio,videos
+
+Vs
+
+Multimodel 
+- Text + Image + Audio + Video
+  ==============================
+Inputs are : text + image + audio + video
+Output are: text + image + audio + video
+Clude 3.5
+Gpt4.0
+...
+========================================================================================================
+
+Gen AI - RAG
+
+Collect the data from sources
+|
+Split the data into multiple chunks
+|
+VectorDB
+|
+Stores to Vector DB
+||
+LLM
+||
+End_usesr
+=====================================================================================
+NLP
+----
+Gen AI models  are all built on top of Natural Language Processing(NLP).
+
+1. Text Processing
+   - Tokenization
+   - lemmatization
+   - stop words
+2. Text Processing
+   - Bagofwords(BOW)
+   - ngram
+   - TF-IDF
+3. Text Processing
+   - word2vector
+4. Transformer
+5. BERT
+
+============================================================================================================
+
+Python Programming
+--------------------
+|-> Class,Object <==
+
+  10 <== int class
+  ---//object
+
+every object - own memory 
+
+a = 10		| 10 | 0x1200
+a = a+1		| 11 | 0x1230
+a ->11
+
+CPython - GIL is enabled //mutex 
+
+Jython
+Ipython
+.. 
+ ----------//GIL is disabled 
+ |
+ |-> thread creation + synchronization 
+
+var = 10
+
+def fx():
+	....
+	....
+	....
+fx()
+
+if(var > value):
+	...
+	...
+
+for v in <collection>:
+	...
+	...
+------------------------------------------//direct approach - direct call
+
+In OOPs style code
+-------------------
+	
+	class <className>:
+		....
+		....//class attributes
+
+	obj = <className>()
+
+	obj.var = 10 <== object based initialization Vs  var = 10 <-- direct initialization
+
+
+
+
+
+Functional style code - expression style code - single line code // computation/initialization
+.................................................................
+
+lambda -> unnamed function
+
+lambda <list of args>:<basicOperation>
+
+lambda - python keyword
+
+functionCall with arguments return somevalue
+
+
+def f1(a):
+	return a+100
+
+f2 =lambda a:a+100
+
+f1(10) ->110
+f2(10) ->110
+
+map(function,Collection) ->generator
+				|--->next() ..
+				|--->for loop
+				|--->typecast list
+
+
+>>> model = "gemma"
+>>> print(model)
+gemma
+>>>
+>>> model = "lamma"
+>>> print(model)
+lamma
+>>>
+>>> model = "GPT4.0"
+>>> print(model)
+GPT4.0
+>>> class mymodels:
+...     model = ""
+...
+>>> obj1 = mymodels()
+>>> obj2 = mymodels()
+>>>
+>>> obj1
+<__main__.mymodels object at 0x000002579A402230>
+>>> obj2
+<__main__.mymodels object at 0x000002579A402260>
+>>>
+>>> obj1.model = "lamma"
+>>> obj2.model =" GPT4.0"
+>>>
+>>> obj1.model
+'lamma'
+>>> obj2.model
+' GPT4.0'
+>>>
+>>>
+>>>
+>>> L=[]
+>>>
+----------------------------------------------------------------------------------------------------------
+NLP
+---
+LLMs learn patterns from datasets but to learn correctly //NLP
+	
+Tokenization
+-----------
+Splitting text into smaller pieces (words,subwords,chars)
+
+ex: playing => play,ing 
+
+Syntax & Grammar
+------------------
+POS(noun,verb) sentence structure 
+
+sematics
+----------
+understanding meaning and relationship between words.
+
+
+NLP Terms
+-----------
+1. Corpus - Paragraph 
+2. Documents - sentences
+3. Vocabulary - unique words - present in the paragraph 
+
+Tokenization
+---------------
+Tokenization -> process of breaking text into smaller pieces (token)
+
+Hello Good Morning
+|
+lowercase chars
+|
+hello good morning // => hello
+		      => good
+		      => morning
+hello -->[1010101]
+good --->[1030303]
+morning -->[2330303]
+--------------------------------------------------------------------------
+python.org
+|
+download - install python - General python programming //OK
+Vs
+
+https://www.anaconda.com/download 
+			|
+			python - we can do python program
+					+
+				 Data analysis libs + Machine Learning modules + DL modules are available 
+
+pip install nltk
+
+pip install numpy
+
+pip install matplotlib 
+
+..
+
+##########################################################################################
+
+n-gram
+
+sequence of n consecutive item(token) from a text.
+
+token - word level
+
+1. unigram 
+2. bigram
+3. trigram (3-gram)
+4. 4-gram 
+..
+   n-gram
+----------------------------//
+
+food good bad <== unique words 
+
+unigram => food , good, bad //
+bigram  => food good // good bad 
+..
+Probability Language Models <= before LLMs
+sentence probability
+word predicition 
+|
+|
+ -->autocorrect
+ -->speech recognition 
+
+Named Entity Recognization
+Document classification
+Spam detection
+...
+--------------------------//FeatureEngineering in ML
+
+24th november 2025 monday NLP session ---> ML 
+ Vs
+date: 24th 
+moth: november
+year: 2025
+day: monday
+session : NLP session
+
+
+==============================================================================================
+Bag of Words
+--------------
+|->word to vector
+
+|->word frequency
+|->not word order / grammar
+
+Bag - contains list of item(token)
+===
+doc1: i likes nlp and i likes python
+
+doc2 : python and nlp course
+
+[ i, likes, nlp, and ,python, course ]
+
+n=6
+
+doc1 
+======
+word 		- count
+i		- 2
+likes		- 2
+nlp		- 1
+and		- 1
+python		- 1	
+
+[2,2,1,1,1] <== vector for doc1
+
+doc2
+-----
+word		- count
+i		-  0
+likes		-  0
+nlp		-  1
+and		-  1
+python	        -  1
+course		-  1
+
+[0,0,1,1,1,1] <== vector for doc2
+
+KNN
+
+Review: "good good excellent movie" --> BoW -> sentiment -> Positive review 
+        "bad bad moview" --->BoW -> sentiment -> Negative review
+
+
+word2vector
+--------------
+ |-> NN 
+ |--> word to numerical vectors 
+			|
+			meaning,context,relationship between words
+ 
+  Word2vector -> capture semantic meaning 
+
+ hello ->[1.0		->[1.0,1.3
+ hi ->[1.3	
+  
+OneHot/BOW/TF		Vs Word2Vector
+=============		   ===========
+[food good bad]			dense of vectors
+
+[100
+ 010
+ 001]
+
+[100
+ ..
+ ..]
+
+count-based			meaning-based 
+
+[food ]				[food,dinner,dosa,....]
+[book ]				[book,notes,...]
+				=====================// similarity search
+
+hello hi good
+=========================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
